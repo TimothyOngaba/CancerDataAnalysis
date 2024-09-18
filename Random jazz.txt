@@ -1,5 +1,0 @@
-jm9GKhdNGPacQsfw
-
-snakemake -j1
-
-
