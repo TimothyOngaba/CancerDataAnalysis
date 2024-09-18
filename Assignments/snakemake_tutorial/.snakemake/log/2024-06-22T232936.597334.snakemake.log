@@ -1,0 +1,2 @@
+SyntaxError in file /home/tim/Documents/snakemake_tutorial/Snakefile, line 29:
+Expected name or colon after rule or checkpoint keyword. (Snakefile, line 29)

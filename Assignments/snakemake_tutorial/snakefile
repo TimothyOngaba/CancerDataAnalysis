@@ -1,0 +1,24 @@
+import glob
+
+# List all .fasta files in folder1
+output1 = glob.glob("output1/*.fasta")
+
+# Extract the base names without the directory and extension
+samples = [f.split('/')[-1].replace('.fasta', '') for f in output1]
+
+# Rule to generate the output file paths
+rule all:
+    input:
+        expand("final_output/{sample}_joined.fasta", sample=samples)
+
+# Rule to concatenate files with the same names from output1 and output2
+rule concatenate_files:
+    input:
+        in1="output1/{sample}.fasta",
+        in2="output2/{sample}.fasta"
+    output:
+        "final_output/{sample}_joined.fasta"
+    shell:
+        "cat {input.in1} {input.in2} > {output}"
+
+       

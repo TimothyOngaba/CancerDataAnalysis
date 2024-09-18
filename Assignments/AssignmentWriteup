@@ -1,0 +1,240 @@
+
+       R work
+#Reading the data into R
+CommunityMatrix <- read.csv("~/Documents/Assignments/r_work/Assignemnt1Done/TabS8.csv")
+Metadata <- read.csv("~/Documents/Assignments/r_work/Assignemnt1Done/Metadata-TCGA-All-18116-Samples.csv")
+#loading dependent package
+library(dplyr)
+
+#Applying read threshold of 10 and any value <10 to 0, any NA to 0
+CommunityMatrix <- CommunityMatrix %>%
+  mutate(across(everything(), ~ ifelse(is.na(.) | . < 10, 0, .)))
+  
+#Removing contaminant Genera. List of genera to remove
+ReductGenera <- c("Afipia", "Aquabacterium", "Asticcacaulis", "Aurantimonas", "Beijerinckia", "Bosea", "Bradyrhizobium", "Brevundimonas", "Caulobacter", "Craurococcus", "Devosia", "Hoeflea", "Mesorhizobium", "Methylobacterium", "Novosphingobium", "Ochrobactrum", "Paracoccus", "Pedomicrobium", "Phyllobacterium", "Rhizobium", "Roseomonas", "Sphingobium", "Sphingomonas", "Sphingopyxis", "Acidovorax", "Azoarcus", "Azospira", "Burkholderia", "Comamonas", "Cupriavidus", "Curvibacter", "Delftia", "Duganella", "Herbaspirillum",                "Janthinobacterium", "Kingella", "Leptothrix", "Limnobacter", "Massilia", "Methylophilus", "Methyloversatilis", "Oxalobacter", "Pelomonas", "Polaromonas", "Ralstonia", "Schlegelella", "Sulfuritalea", "Undibacterium", "Variovorax", "Acinetobacter", "Enhydrobacter", "Enterobacter", "Escherichia", "Nevskia", "Pseudomonas", "Pseudoxanthomonas", "Psychrobacter", "Stenotrophomonas", "Xanthomonas", "Aeromicrobium", "Arthrobacter", "Beutenbergia", "Brevibacterium", "Corynebacterium", "Curtobacterium", "Dietzia", "Geodermatophilus", "Janibacter", "Kocuria", "Microbacterium", "Micrococcus", "Microlunatus", "Patulibacter", "Propionibacterium", "Rhodococcus", "Tsukamurella", "Abiotrophia", "Bacillus", "Brevibacillus", "Brochothrix", "Facklamia", "Paenibacillus",                   "Streptococcus", "Chryseobacterium", "Dyadobacter", "Flavobacterium", "Hydrotalea", "Niastella", "Olivibacter", "Pedobacter", "Wautersiella", "Deinococcus")
+
+#Iterating through ReductGenera to remove columns if they exist
+for (genus in ReductedGenera) {
+  if (genus %in% colnames(CommunityMatrix)) {
+    CommunityMatrix <- CommunityMatrix %>% select(-all_of(genus))
+  }
+}
+
+#Filtering metadata to contain only primary tumour samples
+filteredMetadata <- Metadata %>% filter(sample_type=='Primary Tumor') %>% select(KnightID, primary_site) 
+filteredMetadata <- filteredMetadata %>% mutate(crc = case_when( primary_site == 'Colorectal' ~ 'Colorectal', TRUE ~ 'Other' )) 
+filteredMetadata <- filteredMetadata %>% select(-primary_site) 
+
+#Deleting all other FilteredMetadata columns except KnightID and primary_site
+colnames(filteredMetadata)[1] <- "KnightID"
+columns_to_retain <- c("KnightID", "primary_site")
+ReducedMetadata <- filteredMetadata %>%
+  select(all_of(columns_to_retain))
+#Merging CommunityMatrix with Metadata by KnightID the metadata with the raw community matrix
+combined_data <- merge(CommunityMatrix, ReducedMetadata, by = "KnightID")
+
+#Listing all cancer types to analyse
+CancerTypes = ("Brain", "Cervical", "Prostate", "Stomach","Oral")
+#Looping through the combined dataset to perform the analysis
+for (cancertype in CancerTypes) {
+   if (cancertype %in% colnames(combined_data)) {
+    CommunityMatrix <- CommunityMatrix %>% select(-all_of(genus))
+  }
+}
+
+#seperating combined_data into Colorectal and all other cancer types
+Colorectal <- "Colorectal"
+# Dataset containing information about Colorectal
+Colorectaldata <- combined_data %>%
+  filter(primary_site == Colorectal)
+# Dataset containing information about all other cancer types
+AllOtherCancerTypes <- combined_data %>%
+  filter(primary_site != Colorectal)
+# Alternatively, preserving primary indices
+#Colorectaldata <- combined_data[combined_data$primary_site == Colorectal ]
+#AllOtherCancerTypes<- combined_data[combined_data$primary_site != Colorectal, ]
+
+
+#looping through each genera to calc no of samples >0 and those  equal to zero for colorectal 
+results <- data.frame(Genus = character(), crc_pos = integer(), crc_neg = integer(), stringsAsFactors = FALSE)
+
+for (genus in colnames(Colorectaldata)) {
+  crc_pos <- sum(Colorectaldata[[genus]] > 0, na.rm = TRUE)  # Number of samples > 0
+  crc_neg <- sum(Colorectaldata[[genus]] == 0, na.rm = TRUE) # Number of samples == 0
+  
+  # Adding the results to the data frame
+  results <- rbind(results, data.frame(Genus = genus, crc_pos = crc_pos, crc_neg = crc_neg))
+}
+
+#looping through each genera to calc no of samples >0 and those  equal to zero for othercancertypes
+result2 <- data.frame(Genus = character(), other_pos = integer(), other_neg = integer(), stringsAsFactors = FALSE)
+
+for (genus in colnames(AllOtherCancerTypes)) {
+  other_pos <- sum(AllOtherCancerTypes[[genus]] > 0, na.rm = TRUE)  # Number of samples > 0
+  other_neg <- sum(AllOtherCancerTypes[[genus]] == 0, na.rm = TRUE) # Number of samples == 0
+  
+  # Adding the results to the data frame
+  result2 <- rbind(result2, data.frame(Genus = genus, other_pos = other_pos, other_neg = other_neg))
+}
+# merging results(colorectal) with result2 (allothercancers) by Genus
+FinalResults <- merge(results, result2, by = "Genus")
+print(FinalResults)
+write.csv(FinalResults, "FinalResults.csv", row.names = FALSE)
+
+# Function to perform Fisher's exact test and return p-value
+get_p_value <- function(crc_pos, crc_neg, other_pos, other_neg) {
+  # Create the matrix for Fisher's test
+  matrix_data <- matrix(c(crc_pos, crc_neg, other_pos, other_neg), nrow = 2, byrow = TRUE)
+  
+  # Check the matrix dimensions (should be 2x2)
+  if (all(dim(matrix_data) == c(2, 2))) {
+    test_result <- fisher.test(matrix_data)
+    return(test_result$p.value)
+  } else {
+    # Return NA if the matrix is not 2x2
+    return(NA)
+  }
+}
+
+# Apply the function to each row and create a new column for p-values
+FinalResults <- FinalResults %>%
+  rowwise() %>%
+  mutate(p_value = get_p_value(crc_pos, crc_neg, other_pos, other_neg)) %>%
+  ungroup()
+
+# Sort the dataframe by p-value in descending order
+sorted_FinalResults <- FinalResults %>%
+  arrange(desc(crc_pos))
+  p.adjust(sorted_FinalResults$p.value, method='BH')
+# View the sorted dataframe
+print(sorted_FinalResults)
+
+
+############################################################################################
+# Create data frame to store the results of Fisher's exact test
+fisher_results <- data.frame(
+  Genus = character(),
+  PValue = numeric(),
+  stringsAsFactors = FALSE
+)
+
+# Perform Fisher's exact test on each contingency table
+for (genus in names(contingency_tables)) {
+  contingency_table <- contingency_tables[[genus]]
+  
+  # Debugging: Print the contingency table
+  cat("Contingency table for", genus, ":\n")
+  print(contingency_table)
+  cat("\n")
+  
+  # Check if the matrix has at least two rows and two columns
+  if (nrow(contingency_table) >= 2 && ncol(contingency_table) >= 2) {
+    # Perform Fisher's exact test
+    fisher_test <- fisher.test(contingency_table)
+    
+    # Store the results
+    fisher_results <- fisher_results %>%
+      add_row(Genus = genus, PValue = fisher_test$p.value)
+  } else {
+    message(paste("Skipping genus due to insufficient dimensions:", genus))
+  }
+}
+       
+- Calculate the sum of reads for each genus across all samples for each cancer type and give me a nice, ranked list of the top genera for each cancer type
+# Join the community matrix with metadata
+> TabS8_long <- TabS8 %>%
++     pivot_longer(cols = -KnightID, names_to = "Genus", values_to = "Reads")
+> combined_data2<- TabS8_long %>%
++     left_join(TabS8MetadataEdit, by = "KnightID")
+# Group by primary_site and Genus, and calculate the sum of reads
+> genus_sums <- combined_data2 %>%
++     group_by(primary_site, Genus) %>%
++     summarize(TotalReads = sum(Reads, na.rm = TRUE)) %>%
++     ungroup()
+# Rank the top genera for each primary cancer type
+> ranked_genera <- genus_sums %>%
++     arrange(primary_site, desc(TotalReads)) %>%
++     group_by(primary_site) %>%
++     mutate(Rank = row_number()) %>%
++     ungroup()
+# Filter to get the top N genera
+> top_genera <- ranked_genera %>%
++     filter(Rank <= 10)
+
+# Set threshold for reads column
+df$reads[df$reads < 10] <- 0
+# Columns to apply the threshold to
+columns <- c("reads", "other_column")
+
+# Apply threshold to each specified column
+for (col in columns) {
+  df[[col]][df[[col]] < 10] <- 0
+}
+
+Creating a contingency table for the ranked genera Colorectal vis-avis other CaPrimary sites
+# Load necessary dplyr library
+library(dplyr)
+
+
+# Function to create contingency table
+create_contingency_table <- function(ranked_genera, genus, target_cancer) {
+  # Filter for the genus of interest
+  df_genus <- df %>%
+    dplyr::filter(Genus == genus)
+  
+  # Creating a new column to indicate if the sample is in the target cancer type or not
+  df_genus <- df_genus %>%
+    dplyr::mutate(CancerGroup = ifelse(primary_site == target_cancer, "target", "other"))
+  
+  # Create contingency table
+  table(df_genus$TotalReads, df_genus$CancerGroup)
+}
+
+# List of unique genera and target cancer type
+genera <- unique(ranked_genera$Genus)
+target_cancer <- "Colorectal"
+
+# Create a list to store the contingency tables
+contingency_tables <- list()
+
+# Looping over each genus
+for (genus in genera) {
+  key <- paste(genus, target_cancer, sep = "_")
+  contingency_tables[[key]] <- create_contingency_table(df, genus, target_cancer)
+}
+
+# Print the contingency tables
+contingency_tables
+> print(top_contributors_PC2)
+Blastochloris 		0.1178010  
+Blastomonas 		0.1168257
+Croceibacterium 	0.1163545
+Altererythrobacter 	0.1162451
+Caenibius		0.1160153
+Antarctobacter 		0.1151220
+Aquisediminimonas 	0.1149395
+Aurantiacibacter 	0.1148960      
+Croceicoccus 		0.1148785     
+Citromicrobium 		0.1148168 
+                             
+                             
+The complexity of the up scaled culture say moving from 2D 96-well plate cultures to 3D culture in spheroids/organoids. 
+The differences in grown medium diffusion to inner most cells might cause them to die from altered pH/Oxygen/nutrient saturation. 
+Inconsistent reproducibility of results from varying cell seeding densities and ability of certain cell types to grown in more complex environments.
+High technical experience required in the use of bioreactors which is uncommon                             
+print(pc1_contributors)
+Azospirillum 	0.1416935742 
+Aureimonas      0.1401691477       
+Cereibacter  	0.1400925473           
+Amycolatopsis   0.1395035491           
+Ancylobacter    0.1384081743         
+Agrobacterium 	0.1378437642 
+                              
+ print(pc2_contributors)
+Chitiniphilus  		0.2073817236
+Candidatus.Symbiobacter 0.1961843223            
+Aquihabitans       	0.1929242925        
+Acidocella            	0.1893264688
+Casimicrobium          	0.1881078113  
+Castellaniella 		0.1856357403 
+                                                                                                          

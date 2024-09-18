@@ -1,0 +1,2723 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+all                      1
+concatenate_files      200
+total                  201
+
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00162.fasta, output2/sample00162.fasta
+    output: final_output/sample00162_joined.fasta
+    jobid: 80
+    reason: Missing output files: final_output/sample00162_joined.fasta
+    wildcards: sample=sample00162
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00018.fasta, output2/sample00018.fasta
+    output: final_output/sample00018_joined.fasta
+    jobid: 50
+    reason: Missing output files: final_output/sample00018_joined.fasta
+    wildcards: sample=sample00018
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00101.fasta, output2/sample00101.fasta
+    output: final_output/sample00101_joined.fasta
+    jobid: 65
+    reason: Missing output files: final_output/sample00101_joined.fasta
+    wildcards: sample=sample00101
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00106.fasta, output2/sample00106.fasta
+    output: final_output/sample00106_joined.fasta
+    jobid: 39
+    reason: Missing output files: final_output/sample00106_joined.fasta
+    wildcards: sample=sample00106
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 80.
+1 of 201 steps (0.5%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 50.
+2 of 201 steps (1%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00154.fasta, output2/sample00154.fasta
+    output: final_output/sample00154_joined.fasta
+    jobid: 170
+    reason: Missing output files: final_output/sample00154_joined.fasta
+    wildcards: sample=sample00154
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00033.fasta, output2/sample00033.fasta
+    output: final_output/sample00033_joined.fasta
+    jobid: 69
+    reason: Missing output files: final_output/sample00033_joined.fasta
+    wildcards: sample=sample00033
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 65.
+3 of 201 steps (1%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 39.
+4 of 201 steps (2%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00092.fasta, output2/sample00092.fasta
+    output: final_output/sample00092_joined.fasta
+    jobid: 125
+    reason: Missing output files: final_output/sample00092_joined.fasta
+    wildcards: sample=sample00092
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00200.fasta, output2/sample00200.fasta
+    output: final_output/sample00200_joined.fasta
+    jobid: 159
+    reason: Missing output files: final_output/sample00200_joined.fasta
+    wildcards: sample=sample00200
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 170.
+5 of 201 steps (2%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 69.
+6 of 201 steps (3%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00086.fasta, output2/sample00086.fasta
+    output: final_output/sample00086_joined.fasta
+    jobid: 114
+    reason: Missing output files: final_output/sample00086_joined.fasta
+    wildcards: sample=sample00086
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00088.fasta, output2/sample00088.fasta
+    output: final_output/sample00088_joined.fasta
+    jobid: 107
+    reason: Missing output files: final_output/sample00088_joined.fasta
+    wildcards: sample=sample00088
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 159.
+7 of 201 steps (3%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 125.
+8 of 201 steps (4%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00048.fasta, output2/sample00048.fasta
+    output: final_output/sample00048_joined.fasta
+    jobid: 53
+    reason: Missing output files: final_output/sample00048_joined.fasta
+    wildcards: sample=sample00048
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00016.fasta, output2/sample00016.fasta
+    output: final_output/sample00016_joined.fasta
+    jobid: 189
+    reason: Missing output files: final_output/sample00016_joined.fasta
+    wildcards: sample=sample00016
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 114.
+9 of 201 steps (4%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 107.
+10 of 201 steps (5%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00142.fasta, output2/sample00142.fasta
+    output: final_output/sample00142_joined.fasta
+    jobid: 9
+    reason: Missing output files: final_output/sample00142_joined.fasta
+    wildcards: sample=sample00142
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00031.fasta, output2/sample00031.fasta
+    output: final_output/sample00031_joined.fasta
+    jobid: 148
+    reason: Missing output files: final_output/sample00031_joined.fasta
+    wildcards: sample=sample00031
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 53.
+11 of 201 steps (5%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 189.
+12 of 201 steps (6%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00131.fasta, output2/sample00131.fasta
+    output: final_output/sample00131_joined.fasta
+    jobid: 129
+    reason: Missing output files: final_output/sample00131_joined.fasta
+    wildcards: sample=sample00131
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00192.fasta, output2/sample00192.fasta
+    output: final_output/sample00192_joined.fasta
+    jobid: 193
+    reason: Missing output files: final_output/sample00192_joined.fasta
+    wildcards: sample=sample00192
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 9.
+13 of 201 steps (6%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 148.
+14 of 201 steps (7%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00139.fasta, output2/sample00139.fasta
+    output: final_output/sample00139_joined.fasta
+    jobid: 24
+    reason: Missing output files: final_output/sample00139_joined.fasta
+    wildcards: sample=sample00139
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00066.fasta, output2/sample00066.fasta
+    output: final_output/sample00066_joined.fasta
+    jobid: 73
+    reason: Missing output files: final_output/sample00066_joined.fasta
+    wildcards: sample=sample00066
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 129.
+15 of 201 steps (7%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 193.
+16 of 201 steps (8%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00119.fasta, output2/sample00119.fasta
+    output: final_output/sample00119_joined.fasta
+    jobid: 54
+    reason: Missing output files: final_output/sample00119_joined.fasta
+    wildcards: sample=sample00119
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00123.fasta, output2/sample00123.fasta
+    output: final_output/sample00123_joined.fasta
+    jobid: 88
+    reason: Missing output files: final_output/sample00123_joined.fasta
+    wildcards: sample=sample00123
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 73.
+17 of 201 steps (8%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 24.
+18 of 201 steps (9%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00152.fasta, output2/sample00152.fasta
+    output: final_output/sample00152_joined.fasta
+    jobid: 174
+    reason: Missing output files: final_output/sample00152_joined.fasta
+    wildcards: sample=sample00152
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00055.fasta, output2/sample00055.fasta
+    output: final_output/sample00055_joined.fasta
+    jobid: 133
+    reason: Missing output files: final_output/sample00055_joined.fasta
+    wildcards: sample=sample00055
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 54.
+19 of 201 steps (9%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 88.
+20 of 201 steps (10%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00111.fasta, output2/sample00111.fasta
+    output: final_output/sample00111_joined.fasta
+    jobid: 42
+    reason: Missing output files: final_output/sample00111_joined.fasta
+    wildcards: sample=sample00111
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00083.fasta, output2/sample00083.fasta
+    output: final_output/sample00083_joined.fasta
+    jobid: 57
+    reason: Missing output files: final_output/sample00083_joined.fasta
+    wildcards: sample=sample00083
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 174.
+21 of 201 steps (10%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 133.
+22 of 201 steps (11%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00103.fasta, output2/sample00103.fasta
+    output: final_output/sample00103_joined.fasta
+    jobid: 58
+    reason: Missing output files: final_output/sample00103_joined.fasta
+    wildcards: sample=sample00103
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00115.fasta, output2/sample00115.fasta
+    output: final_output/sample00115_joined.fasta
+    jobid: 87
+    reason: Missing output files: final_output/sample00115_joined.fasta
+    wildcards: sample=sample00115
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 57.
+23 of 201 steps (11%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 42.
+24 of 201 steps (12%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00153.fasta, output2/sample00153.fasta
+    output: final_output/sample00153_joined.fasta
+    jobid: 62
+    reason: Missing output files: final_output/sample00153_joined.fasta
+    wildcards: sample=sample00153
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00117.fasta, output2/sample00117.fasta
+    output: final_output/sample00117_joined.fasta
+    jobid: 13
+    reason: Missing output files: final_output/sample00117_joined.fasta
+    wildcards: sample=sample00117
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 58.
+25 of 201 steps (12%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 87.
+26 of 201 steps (13%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00178.fasta, output2/sample00178.fasta
+    output: final_output/sample00178_joined.fasta
+    jobid: 167
+    reason: Missing output files: final_output/sample00178_joined.fasta
+    wildcards: sample=sample00178
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00135.fasta, output2/sample00135.fasta
+    output: final_output/sample00135_joined.fasta
+    jobid: 103
+    reason: Missing output files: final_output/sample00135_joined.fasta
+    wildcards: sample=sample00135
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 62.
+27 of 201 steps (13%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 13.
+28 of 201 steps (14%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00032.fasta, output2/sample00032.fasta
+    output: final_output/sample00032_joined.fasta
+    jobid: 17
+    reason: Missing output files: final_output/sample00032_joined.fasta
+    wildcards: sample=sample00032
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00112.fasta, output2/sample00112.fasta
+    output: final_output/sample00112_joined.fasta
+    jobid: 178
+    reason: Missing output files: final_output/sample00112_joined.fasta
+    wildcards: sample=sample00112
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 167.
+29 of 201 steps (14%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 103.
+30 of 201 steps (15%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00176.fasta, output2/sample00176.fasta
+    output: final_output/sample00176_joined.fasta
+    jobid: 77
+    reason: Missing output files: final_output/sample00176_joined.fasta
+    wildcards: sample=sample00176
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00188.fasta, output2/sample00188.fasta
+    output: final_output/sample00188_joined.fasta
+    jobid: 91
+    reason: Missing output files: final_output/sample00188_joined.fasta
+    wildcards: sample=sample00188
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 17.
+31 of 201 steps (15%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 178.
+32 of 201 steps (16%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00194.fasta, output2/sample00194.fasta
+    output: final_output/sample00194_joined.fasta
+    jobid: 2
+    reason: Missing output files: final_output/sample00194_joined.fasta
+    wildcards: sample=sample00194
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00019.fasta, output2/sample00019.fasta
+    output: final_output/sample00019_joined.fasta
+    jobid: 122
+    reason: Missing output files: final_output/sample00019_joined.fasta
+    wildcards: sample=sample00019
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 77.
+33 of 201 steps (16%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 91.
+34 of 201 steps (17%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00051.fasta, output2/sample00051.fasta
+    output: final_output/sample00051_joined.fasta
+    jobid: 116
+    reason: Missing output files: final_output/sample00051_joined.fasta
+    wildcards: sample=sample00051
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00179.fasta, output2/sample00179.fasta
+    output: final_output/sample00179_joined.fasta
+    jobid: 48
+    reason: Missing output files: final_output/sample00179_joined.fasta
+    wildcards: sample=sample00179
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 122.
+35 of 201 steps (17%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 2.
+36 of 201 steps (18%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00100.fasta, output2/sample00100.fasta
+    output: final_output/sample00100_joined.fasta
+    jobid: 156
+    reason: Missing output files: final_output/sample00100_joined.fasta
+    wildcards: sample=sample00100
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00022.fasta, output2/sample00022.fasta
+    output: final_output/sample00022_joined.fasta
+    jobid: 47
+    reason: Missing output files: final_output/sample00022_joined.fasta
+    wildcards: sample=sample00022
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 116.
+37 of 201 steps (18%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 48.
+38 of 201 steps (19%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00161.fasta, output2/sample00161.fasta
+    output: final_output/sample00161_joined.fasta
+    jobid: 36
+    reason: Missing output files: final_output/sample00161_joined.fasta
+    wildcards: sample=sample00161
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00095.fasta, output2/sample00095.fasta
+    output: final_output/sample00095_joined.fasta
+    jobid: 32
+    reason: Missing output files: final_output/sample00095_joined.fasta
+    wildcards: sample=sample00095
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 156.
+39 of 201 steps (19%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 47.
+40 of 201 steps (20%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00185.fasta, output2/sample00185.fasta
+    output: final_output/sample00185_joined.fasta
+    jobid: 81
+    reason: Missing output files: final_output/sample00185_joined.fasta
+    wildcards: sample=sample00185
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00104.fasta, output2/sample00104.fasta
+    output: final_output/sample00104_joined.fasta
+    jobid: 152
+    reason: Missing output files: final_output/sample00104_joined.fasta
+    wildcards: sample=sample00104
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 36.
+41 of 201 steps (20%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 32.
+42 of 201 steps (21%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00114.fasta, output2/sample00114.fasta
+    output: final_output/sample00114_joined.fasta
+    jobid: 111
+    reason: Missing output files: final_output/sample00114_joined.fasta
+    wildcards: sample=sample00114
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00126.fasta, output2/sample00126.fasta
+    output: final_output/sample00126_joined.fasta
+    jobid: 182
+    reason: Missing output files: final_output/sample00126_joined.fasta
+    wildcards: sample=sample00126
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 81.
+43 of 201 steps (21%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 152.
+44 of 201 steps (22%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00199.fasta, output2/sample00199.fasta
+    output: final_output/sample00199_joined.fasta
+    jobid: 186
+    reason: Missing output files: final_output/sample00199_joined.fasta
+    wildcards: sample=sample00199
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:23 2024]
+rule concatenate_files:
+    input: output1/sample00197.fasta, output2/sample00197.fasta
+    output: final_output/sample00197_joined.fasta
+    jobid: 75
+    reason: Missing output files: final_output/sample00197_joined.fasta
+    wildcards: sample=sample00197
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:23 2024]
+Finished job 111.
+45 of 201 steps (22%) done
+[Fri Jun 28 13:45:23 2024]
+Finished job 182.
+46 of 201 steps (23%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00062.fasta, output2/sample00062.fasta
+    output: final_output/sample00062_joined.fasta
+    jobid: 21
+    reason: Missing output files: final_output/sample00062_joined.fasta
+    wildcards: sample=sample00062
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00012.fasta, output2/sample00012.fasta
+    output: final_output/sample00012_joined.fasta
+    jobid: 175
+    reason: Missing output files: final_output/sample00012_joined.fasta
+    wildcards: sample=sample00012
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 186.
+47 of 201 steps (23%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 75.
+48 of 201 steps (24%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00109.fasta, output2/sample00109.fasta
+    output: final_output/sample00109_joined.fasta
+    jobid: 55
+    reason: Missing output files: final_output/sample00109_joined.fasta
+    wildcards: sample=sample00109
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00028.fasta, output2/sample00028.fasta
+    output: final_output/sample00028_joined.fasta
+    jobid: 102
+    reason: Missing output files: final_output/sample00028_joined.fasta
+    wildcards: sample=sample00028
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 21.
+49 of 201 steps (24%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 175.
+50 of 201 steps (25%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00177.fasta, output2/sample00177.fasta
+    output: final_output/sample00177_joined.fasta
+    jobid: 85
+    reason: Missing output files: final_output/sample00177_joined.fasta
+    wildcards: sample=sample00177
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00025.fasta, output2/sample00025.fasta
+    output: final_output/sample00025_joined.fasta
+    jobid: 117
+    reason: Missing output files: final_output/sample00025_joined.fasta
+    wildcards: sample=sample00025
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 55.
+51 of 201 steps (25%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 102.
+52 of 201 steps (26%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00084.fasta, output2/sample00084.fasta
+    output: final_output/sample00084_joined.fasta
+    jobid: 171
+    reason: Missing output files: final_output/sample00084_joined.fasta
+    wildcards: sample=sample00084
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00148.fasta, output2/sample00148.fasta
+    output: final_output/sample00148_joined.fasta
+    jobid: 130
+    reason: Missing output files: final_output/sample00148_joined.fasta
+    wildcards: sample=sample00148
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 85.
+53 of 201 steps (26%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 117.
+54 of 201 steps (27%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00136.fasta, output2/sample00136.fasta
+    output: final_output/sample00136_joined.fasta
+    jobid: 97
+    reason: Missing output files: final_output/sample00136_joined.fasta
+    wildcards: sample=sample00136
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00013.fasta, output2/sample00013.fasta
+    output: final_output/sample00013_joined.fasta
+    jobid: 160
+    reason: Missing output files: final_output/sample00013_joined.fasta
+    wildcards: sample=sample00013
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 171.
+55 of 201 steps (27%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 130.
+56 of 201 steps (28%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00014.fasta, output2/sample00014.fasta
+    output: final_output/sample00014_joined.fasta
+    jobid: 10
+    reason: Missing output files: final_output/sample00014_joined.fasta
+    wildcards: sample=sample00014
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00180.fasta, output2/sample00180.fasta
+    output: final_output/sample00180_joined.fasta
+    jobid: 162
+    reason: Missing output files: final_output/sample00180_joined.fasta
+    wildcards: sample=sample00180
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 97.
+57 of 201 steps (28%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 160.
+58 of 201 steps (29%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00184.fasta, output2/sample00184.fasta
+    output: final_output/sample00184_joined.fasta
+    jobid: 40
+    reason: Missing output files: final_output/sample00184_joined.fasta
+    wildcards: sample=sample00184
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00069.fasta, output2/sample00069.fasta
+    output: final_output/sample00069_joined.fasta
+    jobid: 192
+    reason: Missing output files: final_output/sample00069_joined.fasta
+    wildcards: sample=sample00069
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 10.
+59 of 201 steps (29%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 162.
+60 of 201 steps (30%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00145.fasta, output2/sample00145.fasta
+    output: final_output/sample00145_joined.fasta
+    jobid: 115
+    reason: Missing output files: final_output/sample00145_joined.fasta
+    wildcards: sample=sample00145
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00105.fasta, output2/sample00105.fasta
+    output: final_output/sample00105_joined.fasta
+    jobid: 29
+    reason: Missing output files: final_output/sample00105_joined.fasta
+    wildcards: sample=sample00105
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 40.
+61 of 201 steps (30%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 192.
+62 of 201 steps (31%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00174.fasta, output2/sample00174.fasta
+    output: final_output/sample00174_joined.fasta
+    jobid: 89
+    reason: Missing output files: final_output/sample00174_joined.fasta
+    wildcards: sample=sample00174
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00094.fasta, output2/sample00094.fasta
+    output: final_output/sample00094_joined.fasta
+    jobid: 134
+    reason: Missing output files: final_output/sample00094_joined.fasta
+    wildcards: sample=sample00094
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 115.
+63 of 201 steps (31%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 29.
+64 of 201 steps (32%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00070.fasta, output2/sample00070.fasta
+    output: final_output/sample00070_joined.fasta
+    jobid: 149
+    reason: Missing output files: final_output/sample00070_joined.fasta
+    wildcards: sample=sample00070
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00043.fasta, output2/sample00043.fasta
+    output: final_output/sample00043_joined.fasta
+    jobid: 194
+    reason: Missing output files: final_output/sample00043_joined.fasta
+    wildcards: sample=sample00043
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 89.
+65 of 201 steps (32%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 134.
+66 of 201 steps (33%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00164.fasta, output2/sample00164.fasta
+    output: final_output/sample00164_joined.fasta
+    jobid: 179
+    reason: Missing output files: final_output/sample00164_joined.fasta
+    wildcards: sample=sample00164
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00190.fasta, output2/sample00190.fasta
+    output: final_output/sample00190_joined.fasta
+    jobid: 164
+    reason: Missing output files: final_output/sample00190_joined.fasta
+    wildcards: sample=sample00190
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 149.
+67 of 201 steps (33%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 194.
+68 of 201 steps (34%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00099.fasta, output2/sample00099.fasta
+    output: final_output/sample00099_joined.fasta
+    jobid: 123
+    reason: Missing output files: final_output/sample00099_joined.fasta
+    wildcards: sample=sample00099
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00059.fasta, output2/sample00059.fasta
+    output: final_output/sample00059_joined.fasta
+    jobid: 44
+    reason: Missing output files: final_output/sample00059_joined.fasta
+    wildcards: sample=sample00059
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 179.
+69 of 201 steps (34%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 164.
+70 of 201 steps (35%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00125.fasta, output2/sample00125.fasta
+    output: final_output/sample00125_joined.fasta
+    jobid: 74
+    reason: Missing output files: final_output/sample00125_joined.fasta
+    wildcards: sample=sample00125
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00107.fasta, output2/sample00107.fasta
+    output: final_output/sample00107_joined.fasta
+    jobid: 19
+    reason: Missing output files: final_output/sample00107_joined.fasta
+    wildcards: sample=sample00107
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 123.
+71 of 201 steps (35%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 44.
+72 of 201 steps (36%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00196.fasta, output2/sample00196.fasta
+    output: final_output/sample00196_joined.fasta
+    jobid: 127
+    reason: Missing output files: final_output/sample00196_joined.fasta
+    wildcards: sample=sample00196
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00133.fasta, output2/sample00133.fasta
+    output: final_output/sample00133_joined.fasta
+    jobid: 168
+    reason: Missing output files: final_output/sample00133_joined.fasta
+    wildcards: sample=sample00133
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 74.
+73 of 201 steps (36%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 19.
+74 of 201 steps (37%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00169.fasta, output2/sample00169.fasta
+    output: final_output/sample00169_joined.fasta
+    jobid: 172
+    reason: Missing output files: final_output/sample00169_joined.fasta
+    wildcards: sample=sample00169
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00073.fasta, output2/sample00073.fasta
+    output: final_output/sample00073_joined.fasta
+    jobid: 198
+    reason: Missing output files: final_output/sample00073_joined.fasta
+    wildcards: sample=sample00073
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 127.
+75 of 201 steps (37%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 168.
+76 of 201 steps (38%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00082.fasta, output2/sample00082.fasta
+    output: final_output/sample00082_joined.fasta
+    jobid: 22
+    reason: Missing output files: final_output/sample00082_joined.fasta
+    wildcards: sample=sample00082
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00172.fasta, output2/sample00172.fasta
+    output: final_output/sample00172_joined.fasta
+    jobid: 108
+    reason: Missing output files: final_output/sample00172_joined.fasta
+    wildcards: sample=sample00172
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 172.
+77 of 201 steps (38%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 198.
+78 of 201 steps (39%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00140.fasta, output2/sample00140.fasta
+    output: final_output/sample00140_joined.fasta
+    jobid: 52
+    reason: Missing output files: final_output/sample00140_joined.fasta
+    wildcards: sample=sample00140
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00015.fasta, output2/sample00015.fasta
+    output: final_output/sample00015_joined.fasta
+    jobid: 138
+    reason: Missing output files: final_output/sample00015_joined.fasta
+    wildcards: sample=sample00015
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 22.
+79 of 201 steps (39%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 108.
+80 of 201 steps (40%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00173.fasta, output2/sample00173.fasta
+    output: final_output/sample00173_joined.fasta
+    jobid: 187
+    reason: Missing output files: final_output/sample00173_joined.fasta
+    wildcards: sample=sample00173
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00137.fasta, output2/sample00137.fasta
+    output: final_output/sample00137_joined.fasta
+    jobid: 1
+    reason: Missing output files: final_output/sample00137_joined.fasta
+    wildcards: sample=sample00137
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 52.
+81 of 201 steps (40%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 138.
+82 of 201 steps (41%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00009.fasta, output2/sample00009.fasta
+    output: final_output/sample00009_joined.fasta
+    jobid: 8
+    reason: Missing output files: final_output/sample00009_joined.fasta
+    wildcards: sample=sample00009
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00127.fasta, output2/sample00127.fasta
+    output: final_output/sample00127_joined.fasta
+    jobid: 146
+    reason: Missing output files: final_output/sample00127_joined.fasta
+    wildcards: sample=sample00127
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 187.
+83 of 201 steps (41%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 1.
+84 of 201 steps (42%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00064.fasta, output2/sample00064.fasta
+    output: final_output/sample00064_joined.fasta
+    jobid: 23
+    reason: Missing output files: final_output/sample00064_joined.fasta
+    wildcards: sample=sample00064
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00047.fasta, output2/sample00047.fasta
+    output: final_output/sample00047_joined.fasta
+    jobid: 26
+    reason: Missing output files: final_output/sample00047_joined.fasta
+    wildcards: sample=sample00047
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 8.
+85 of 201 steps (42%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 146.
+86 of 201 steps (43%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00005.fasta, output2/sample00005.fasta
+    output: final_output/sample00005_joined.fasta
+    jobid: 56
+    reason: Missing output files: final_output/sample00005_joined.fasta
+    wildcards: sample=sample00005
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00143.fasta, output2/sample00143.fasta
+    output: final_output/sample00143_joined.fasta
+    jobid: 49
+    reason: Missing output files: final_output/sample00143_joined.fasta
+    wildcards: sample=sample00143
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 23.
+87 of 201 steps (43%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 26.
+88 of 201 steps (44%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00079.fasta, output2/sample00079.fasta
+    output: final_output/sample00079_joined.fasta
+    jobid: 157
+    reason: Missing output files: final_output/sample00079_joined.fasta
+    wildcards: sample=sample00079
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00087.fasta, output2/sample00087.fasta
+    output: final_output/sample00087_joined.fasta
+    jobid: 101
+    reason: Missing output files: final_output/sample00087_joined.fasta
+    wildcards: sample=sample00087
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 56.
+89 of 201 steps (44%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 49.
+90 of 201 steps (45%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00042.fasta, output2/sample00042.fasta
+    output: final_output/sample00042_joined.fasta
+    jobid: 7
+    reason: Missing output files: final_output/sample00042_joined.fasta
+    wildcards: sample=sample00042
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00108.fasta, output2/sample00108.fasta
+    output: final_output/sample00108_joined.fasta
+    jobid: 161
+    reason: Missing output files: final_output/sample00108_joined.fasta
+    wildcards: sample=sample00108
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 157.
+91 of 201 steps (45%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 101.
+92 of 201 steps (46%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00130.fasta, output2/sample00130.fasta
+    output: final_output/sample00130_joined.fasta
+    jobid: 67
+    reason: Missing output files: final_output/sample00130_joined.fasta
+    wildcards: sample=sample00130
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00150.fasta, output2/sample00150.fasta
+    output: final_output/sample00150_joined.fasta
+    jobid: 135
+    reason: Missing output files: final_output/sample00150_joined.fasta
+    wildcards: sample=sample00150
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 7.
+93 of 201 steps (46%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 161.
+94 of 201 steps (47%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00187.fasta, output2/sample00187.fasta
+    output: final_output/sample00187_joined.fasta
+    jobid: 191
+    reason: Missing output files: final_output/sample00187_joined.fasta
+    wildcards: sample=sample00187
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00044.fasta, output2/sample00044.fasta
+    output: final_output/sample00044_joined.fasta
+    jobid: 165
+    reason: Missing output files: final_output/sample00044_joined.fasta
+    wildcards: sample=sample00044
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 67.
+95 of 201 steps (47%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 135.
+96 of 201 steps (48%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00035.fasta, output2/sample00035.fasta
+    output: final_output/sample00035_joined.fasta
+    jobid: 11
+    reason: Missing output files: final_output/sample00035_joined.fasta
+    wildcards: sample=sample00035
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00058.fasta, output2/sample00058.fasta
+    output: final_output/sample00058_joined.fasta
+    jobid: 30
+    reason: Missing output files: final_output/sample00058_joined.fasta
+    wildcards: sample=sample00058
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 191.
+97 of 201 steps (48%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 165.
+98 of 201 steps (49%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00166.fasta, output2/sample00166.fasta
+    output: final_output/sample00166_joined.fasta
+    jobid: 41
+    reason: Missing output files: final_output/sample00166_joined.fasta
+    wildcards: sample=sample00166
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00071.fasta, output2/sample00071.fasta
+    output: final_output/sample00071_joined.fasta
+    jobid: 60
+    reason: Missing output files: final_output/sample00071_joined.fasta
+    wildcards: sample=sample00071
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:24 2024]
+Finished job 11.
+99 of 201 steps (49%) done
+[Fri Jun 28 13:45:24 2024]
+Finished job 30.
+100 of 201 steps (50%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:24 2024]
+rule concatenate_files:
+    input: output1/sample00002.fasta, output2/sample00002.fasta
+    output: final_output/sample00002_joined.fasta
+    jobid: 176
+    reason: Missing output files: final_output/sample00002_joined.fasta
+    wildcards: sample=sample00002
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00160.fasta, output2/sample00160.fasta
+    output: final_output/sample00160_joined.fasta
+    jobid: 90
+    reason: Missing output files: final_output/sample00160_joined.fasta
+    wildcards: sample=sample00160
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 41.
+101 of 201 steps (50%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 60.
+102 of 201 steps (51%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00011.fasta, output2/sample00011.fasta
+    output: final_output/sample00011_joined.fasta
+    jobid: 142
+    reason: Missing output files: final_output/sample00011_joined.fasta
+    wildcards: sample=sample00011
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00158.fasta, output2/sample00158.fasta
+    output: final_output/sample00158_joined.fasta
+    jobid: 45
+    reason: Missing output files: final_output/sample00158_joined.fasta
+    wildcards: sample=sample00158
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 176.
+103 of 201 steps (51%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 90.
+104 of 201 steps (52%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00195.fasta, output2/sample00195.fasta
+    output: final_output/sample00195_joined.fasta
+    jobid: 82
+    reason: Missing output files: final_output/sample00195_joined.fasta
+    wildcards: sample=sample00195
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00010.fasta, output2/sample00010.fasta
+    output: final_output/sample00010_joined.fasta
+    jobid: 150
+    reason: Missing output files: final_output/sample00010_joined.fasta
+    wildcards: sample=sample00010
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 142.
+105 of 201 steps (52%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 45.
+106 of 201 steps (53%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00132.fasta, output2/sample00132.fasta
+    output: final_output/sample00132_joined.fasta
+    jobid: 112
+    reason: Missing output files: final_output/sample00132_joined.fasta
+    wildcards: sample=sample00132
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00026.fasta, output2/sample00026.fasta
+    output: final_output/sample00026_joined.fasta
+    jobid: 15
+    reason: Missing output files: final_output/sample00026_joined.fasta
+    wildcards: sample=sample00026
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 82.
+107 of 201 steps (53%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 150.
+108 of 201 steps (54%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00171.fasta, output2/sample00171.fasta
+    output: final_output/sample00171_joined.fasta
+    jobid: 31
+    reason: Missing output files: final_output/sample00171_joined.fasta
+    wildcards: sample=sample00171
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00045.fasta, output2/sample00045.fasta
+    output: final_output/sample00045_joined.fasta
+    jobid: 181
+    reason: Missing output files: final_output/sample00045_joined.fasta
+    wildcards: sample=sample00045
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 112.
+109 of 201 steps (54%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 15.
+110 of 201 steps (55%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00085.fasta, output2/sample00085.fasta
+    output: final_output/sample00085_joined.fasta
+    jobid: 37
+    reason: Missing output files: final_output/sample00085_joined.fasta
+    wildcards: sample=sample00085
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00004.fasta, output2/sample00004.fasta
+    output: final_output/sample00004_joined.fasta
+    jobid: 94
+    reason: Missing output files: final_output/sample00004_joined.fasta
+    wildcards: sample=sample00004
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 31.
+111 of 201 steps (55%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 181.
+112 of 201 steps (56%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00146.fasta, output2/sample00146.fasta
+    output: final_output/sample00146_joined.fasta
+    jobid: 71
+    reason: Missing output files: final_output/sample00146_joined.fasta
+    wildcards: sample=sample00146
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00039.fasta, output2/sample00039.fasta
+    output: final_output/sample00039_joined.fasta
+    jobid: 139
+    reason: Missing output files: final_output/sample00039_joined.fasta
+    wildcards: sample=sample00039
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 37.
+113 of 201 steps (56%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 94.
+114 of 201 steps (57%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00186.fasta, output2/sample00186.fasta
+    output: final_output/sample00186_joined.fasta
+    jobid: 109
+    reason: Missing output files: final_output/sample00186_joined.fasta
+    wildcards: sample=sample00186
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00075.fasta, output2/sample00075.fasta
+    output: final_output/sample00075_joined.fasta
+    jobid: 63
+    reason: Missing output files: final_output/sample00075_joined.fasta
+    wildcards: sample=sample00075
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 71.
+115 of 201 steps (57%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 139.
+116 of 201 steps (58%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00097.fasta, output2/sample00097.fasta
+    output: final_output/sample00097_joined.fasta
+    jobid: 199
+    reason: Missing output files: final_output/sample00097_joined.fasta
+    wildcards: sample=sample00097
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00129.fasta, output2/sample00129.fasta
+    output: final_output/sample00129_joined.fasta
+    jobid: 33
+    reason: Missing output files: final_output/sample00129_joined.fasta
+    wildcards: sample=sample00129
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 109.
+117 of 201 steps (58%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 63.
+118 of 201 steps (59%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00030.fasta, output2/sample00030.fasta
+    output: final_output/sample00030_joined.fasta
+    jobid: 124
+    reason: Missing output files: final_output/sample00030_joined.fasta
+    wildcards: sample=sample00030
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00189.fasta, output2/sample00189.fasta
+    output: final_output/sample00189_joined.fasta
+    jobid: 18
+    reason: Missing output files: final_output/sample00189_joined.fasta
+    wildcards: sample=sample00189
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 199.
+119 of 201 steps (59%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 33.
+120 of 201 steps (60%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00060.fasta, output2/sample00060.fasta
+    output: final_output/sample00060_joined.fasta
+    jobid: 169
+    reason: Missing output files: final_output/sample00060_joined.fasta
+    wildcards: sample=sample00060
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00065.fasta, output2/sample00065.fasta
+    output: final_output/sample00065_joined.fasta
+    jobid: 3
+    reason: Missing output files: final_output/sample00065_joined.fasta
+    wildcards: sample=sample00065
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 124.
+121 of 201 steps (60%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 18.
+122 of 201 steps (61%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00027.fasta, output2/sample00027.fasta
+    output: final_output/sample00027_joined.fasta
+    jobid: 131
+    reason: Missing output files: final_output/sample00027_joined.fasta
+    wildcards: sample=sample00027
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00144.fasta, output2/sample00144.fasta
+    output: final_output/sample00144_joined.fasta
+    jobid: 144
+    reason: Missing output files: final_output/sample00144_joined.fasta
+    wildcards: sample=sample00144
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 169.
+123 of 201 steps (61%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 3.
+124 of 201 steps (62%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00134.fasta, output2/sample00134.fasta
+    output: final_output/sample00134_joined.fasta
+    jobid: 140
+    reason: Missing output files: final_output/sample00134_joined.fasta
+    wildcards: sample=sample00134
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00056.fasta, output2/sample00056.fasta
+    output: final_output/sample00056_joined.fasta
+    jobid: 6
+    reason: Missing output files: final_output/sample00056_joined.fasta
+    wildcards: sample=sample00056
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 131.
+125 of 201 steps (62%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 144.
+126 of 201 steps (63%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00003.fasta, output2/sample00003.fasta
+    output: final_output/sample00003_joined.fasta
+    jobid: 126
+    reason: Missing output files: final_output/sample00003_joined.fasta
+    wildcards: sample=sample00003
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00156.fasta, output2/sample00156.fasta
+    output: final_output/sample00156_joined.fasta
+    jobid: 86
+    reason: Missing output files: final_output/sample00156_joined.fasta
+    wildcards: sample=sample00156
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 140.
+127 of 201 steps (63%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 6.
+128 of 201 steps (64%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00017.fasta, output2/sample00017.fasta
+    output: final_output/sample00017_joined.fasta
+    jobid: 51
+    reason: Missing output files: final_output/sample00017_joined.fasta
+    wildcards: sample=sample00017
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00041.fasta, output2/sample00041.fasta
+    output: final_output/sample00041_joined.fasta
+    jobid: 5
+    reason: Missing output files: final_output/sample00041_joined.fasta
+    wildcards: sample=sample00041
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 126.
+129 of 201 steps (64%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 86.
+130 of 201 steps (65%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00183.fasta, output2/sample00183.fasta
+    output: final_output/sample00183_joined.fasta
+    jobid: 155
+    reason: Missing output files: final_output/sample00183_joined.fasta
+    wildcards: sample=sample00183
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00163.fasta, output2/sample00163.fasta
+    output: final_output/sample00163_joined.fasta
+    jobid: 79
+    reason: Missing output files: final_output/sample00163_joined.fasta
+    wildcards: sample=sample00163
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 51.
+131 of 201 steps (65%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 5.
+132 of 201 steps (66%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00076.fasta, output2/sample00076.fasta
+    output: final_output/sample00076_joined.fasta
+    jobid: 66
+    reason: Missing output files: final_output/sample00076_joined.fasta
+    wildcards: sample=sample00076
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00006.fasta, output2/sample00006.fasta
+    output: final_output/sample00006_joined.fasta
+    jobid: 64
+    reason: Missing output files: final_output/sample00006_joined.fasta
+    wildcards: sample=sample00006
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 155.
+133 of 201 steps (66%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 79.
+134 of 201 steps (67%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00191.fasta, output2/sample00191.fasta
+    output: final_output/sample00191_joined.fasta
+    jobid: 96
+    reason: Missing output files: final_output/sample00191_joined.fasta
+    wildcards: sample=sample00191
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00157.fasta, output2/sample00157.fasta
+    output: final_output/sample00157_joined.fasta
+    jobid: 93
+    reason: Missing output files: final_output/sample00157_joined.fasta
+    wildcards: sample=sample00157
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 66.
+135 of 201 steps (67%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 64.
+136 of 201 steps (68%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00128.fasta, output2/sample00128.fasta
+    output: final_output/sample00128_joined.fasta
+    jobid: 141
+    reason: Missing output files: final_output/sample00128_joined.fasta
+    wildcards: sample=sample00128
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00170.fasta, output2/sample00170.fasta
+    output: final_output/sample00170_joined.fasta
+    jobid: 153
+    reason: Missing output files: final_output/sample00170_joined.fasta
+    wildcards: sample=sample00170
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 96.
+137 of 201 steps (68%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 93.
+138 of 201 steps (69%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00040.fasta, output2/sample00040.fasta
+    output: final_output/sample00040_joined.fasta
+    jobid: 183
+    reason: Missing output files: final_output/sample00040_joined.fasta
+    wildcards: sample=sample00040
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00124.fasta, output2/sample00124.fasta
+    output: final_output/sample00124_joined.fasta
+    jobid: 72
+    reason: Missing output files: final_output/sample00124_joined.fasta
+    wildcards: sample=sample00124
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 141.
+139 of 201 steps (69%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 153.
+140 of 201 steps (70%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00168.fasta, output2/sample00168.fasta
+    output: final_output/sample00168_joined.fasta
+    jobid: 38
+    reason: Missing output files: final_output/sample00168_joined.fasta
+    wildcards: sample=sample00168
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00063.fasta, output2/sample00063.fasta
+    output: final_output/sample00063_joined.fasta
+    jobid: 83
+    reason: Missing output files: final_output/sample00063_joined.fasta
+    wildcards: sample=sample00063
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 183.
+141 of 201 steps (70%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 72.
+142 of 201 steps (71%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00155.fasta, output2/sample00155.fasta
+    output: final_output/sample00155_joined.fasta
+    jobid: 113
+    reason: Missing output files: final_output/sample00155_joined.fasta
+    wildcards: sample=sample00155
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00052.fasta, output2/sample00052.fasta
+    output: final_output/sample00052_joined.fasta
+    jobid: 78
+    reason: Missing output files: final_output/sample00052_joined.fasta
+    wildcards: sample=sample00052
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 38.
+143 of 201 steps (71%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 83.
+144 of 201 steps (72%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00138.fasta, output2/sample00138.fasta
+    output: final_output/sample00138_joined.fasta
+    jobid: 98
+    reason: Missing output files: final_output/sample00138_joined.fasta
+    wildcards: sample=sample00138
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00118.fasta, output2/sample00118.fasta
+    output: final_output/sample00118_joined.fasta
+    jobid: 92
+    reason: Missing output files: final_output/sample00118_joined.fasta
+    wildcards: sample=sample00118
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 113.
+145 of 201 steps (72%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 78.
+146 of 201 steps (73%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00089.fasta, output2/sample00089.fasta
+    output: final_output/sample00089_joined.fasta
+    jobid: 143
+    reason: Missing output files: final_output/sample00089_joined.fasta
+    wildcards: sample=sample00089
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00037.fasta, output2/sample00037.fasta
+    output: final_output/sample00037_joined.fasta
+    jobid: 197
+    reason: Missing output files: final_output/sample00037_joined.fasta
+    wildcards: sample=sample00037
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 98.
+147 of 201 steps (73%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 92.
+148 of 201 steps (74%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00175.fasta, output2/sample00175.fasta
+    output: final_output/sample00175_joined.fasta
+    jobid: 128
+    reason: Missing output files: final_output/sample00175_joined.fasta
+    wildcards: sample=sample00175
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00029.fasta, output2/sample00029.fasta
+    output: final_output/sample00029_joined.fasta
+    jobid: 137
+    reason: Missing output files: final_output/sample00029_joined.fasta
+    wildcards: sample=sample00029
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 143.
+149 of 201 steps (74%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 197.
+150 of 201 steps (75%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00080.fasta, output2/sample00080.fasta
+    output: final_output/sample00080_joined.fasta
+    jobid: 200
+    reason: Missing output files: final_output/sample00080_joined.fasta
+    wildcards: sample=sample00080
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00121.fasta, output2/sample00121.fasta
+    output: final_output/sample00121_joined.fasta
+    jobid: 166
+    reason: Missing output files: final_output/sample00121_joined.fasta
+    wildcards: sample=sample00121
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 128.
+151 of 201 steps (75%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 137.
+152 of 201 steps (76%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00036.fasta, output2/sample00036.fasta
+    output: final_output/sample00036_joined.fasta
+    jobid: 188
+    reason: Missing output files: final_output/sample00036_joined.fasta
+    wildcards: sample=sample00036
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00093.fasta, output2/sample00093.fasta
+    output: final_output/sample00093_joined.fasta
+    jobid: 46
+    reason: Missing output files: final_output/sample00093_joined.fasta
+    wildcards: sample=sample00093
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 200.
+153 of 201 steps (76%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 166.
+154 of 201 steps (77%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00096.fasta, output2/sample00096.fasta
+    output: final_output/sample00096_joined.fasta
+    jobid: 100
+    reason: Missing output files: final_output/sample00096_joined.fasta
+    wildcards: sample=sample00096
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00057.fasta, output2/sample00057.fasta
+    output: final_output/sample00057_joined.fasta
+    jobid: 173
+    reason: Missing output files: final_output/sample00057_joined.fasta
+    wildcards: sample=sample00057
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 188.
+155 of 201 steps (77%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 46.
+156 of 201 steps (78%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00061.fasta, output2/sample00061.fasta
+    output: final_output/sample00061_joined.fasta
+    jobid: 158
+    reason: Missing output files: final_output/sample00061_joined.fasta
+    wildcards: sample=sample00061
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00007.fasta, output2/sample00007.fasta
+    output: final_output/sample00007_joined.fasta
+    jobid: 154
+    reason: Missing output files: final_output/sample00007_joined.fasta
+    wildcards: sample=sample00007
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 100.
+157 of 201 steps (78%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 173.
+158 of 201 steps (79%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00113.fasta, output2/sample00113.fasta
+    output: final_output/sample00113_joined.fasta
+    jobid: 110
+    reason: Missing output files: final_output/sample00113_joined.fasta
+    wildcards: sample=sample00113
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00072.fasta, output2/sample00072.fasta
+    output: final_output/sample00072_joined.fasta
+    jobid: 61
+    reason: Missing output files: final_output/sample00072_joined.fasta
+    wildcards: sample=sample00072
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 158.
+159 of 201 steps (79%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 154.
+160 of 201 steps (80%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00181.fasta, output2/sample00181.fasta
+    output: final_output/sample00181_joined.fasta
+    jobid: 95
+    reason: Missing output files: final_output/sample00181_joined.fasta
+    wildcards: sample=sample00181
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:25 2024]
+rule concatenate_files:
+    input: output1/sample00198.fasta, output2/sample00198.fasta
+    output: final_output/sample00198_joined.fasta
+    jobid: 76
+    reason: Missing output files: final_output/sample00198_joined.fasta
+    wildcards: sample=sample00198
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:25 2024]
+Finished job 110.
+161 of 201 steps (80%) done
+[Fri Jun 28 13:45:25 2024]
+Finished job 61.
+162 of 201 steps (81%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00078.fasta, output2/sample00078.fasta
+    output: final_output/sample00078_joined.fasta
+    jobid: 35
+    reason: Missing output files: final_output/sample00078_joined.fasta
+    wildcards: sample=sample00078
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00053.fasta, output2/sample00053.fasta
+    output: final_output/sample00053_joined.fasta
+    jobid: 121
+    reason: Missing output files: final_output/sample00053_joined.fasta
+    wildcards: sample=sample00053
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 95.
+163 of 201 steps (81%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 76.
+164 of 201 steps (82%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00122.fasta, output2/sample00122.fasta
+    output: final_output/sample00122_joined.fasta
+    jobid: 68
+    reason: Missing output files: final_output/sample00122_joined.fasta
+    wildcards: sample=sample00122
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00098.fasta, output2/sample00098.fasta
+    output: final_output/sample00098_joined.fasta
+    jobid: 106
+    reason: Missing output files: final_output/sample00098_joined.fasta
+    wildcards: sample=sample00098
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 35.
+165 of 201 steps (82%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 121.
+166 of 201 steps (83%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00067.fasta, output2/sample00067.fasta
+    output: final_output/sample00067_joined.fasta
+    jobid: 16
+    reason: Missing output files: final_output/sample00067_joined.fasta
+    wildcards: sample=sample00067
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00102.fasta, output2/sample00102.fasta
+    output: final_output/sample00102_joined.fasta
+    jobid: 43
+    reason: Missing output files: final_output/sample00102_joined.fasta
+    wildcards: sample=sample00102
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 68.
+167 of 201 steps (83%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 106.
+168 of 201 steps (84%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00046.fasta, output2/sample00046.fasta
+    output: final_output/sample00046_joined.fasta
+    jobid: 196
+    reason: Missing output files: final_output/sample00046_joined.fasta
+    wildcards: sample=sample00046
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00034.fasta, output2/sample00034.fasta
+    output: final_output/sample00034_joined.fasta
+    jobid: 163
+    reason: Missing output files: final_output/sample00034_joined.fasta
+    wildcards: sample=sample00034
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 16.
+169 of 201 steps (84%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 43.
+170 of 201 steps (85%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00116.fasta, output2/sample00116.fasta
+    output: final_output/sample00116_joined.fasta
+    jobid: 184
+    reason: Missing output files: final_output/sample00116_joined.fasta
+    wildcards: sample=sample00116
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00147.fasta, output2/sample00147.fasta
+    output: final_output/sample00147_joined.fasta
+    jobid: 28
+    reason: Missing output files: final_output/sample00147_joined.fasta
+    wildcards: sample=sample00147
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 196.
+171 of 201 steps (85%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 163.
+172 of 201 steps (86%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00068.fasta, output2/sample00068.fasta
+    output: final_output/sample00068_joined.fasta
+    jobid: 4
+    reason: Missing output files: final_output/sample00068_joined.fasta
+    wildcards: sample=sample00068
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00110.fasta, output2/sample00110.fasta
+    output: final_output/sample00110_joined.fasta
+    jobid: 118
+    reason: Missing output files: final_output/sample00110_joined.fasta
+    wildcards: sample=sample00110
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 184.
+173 of 201 steps (86%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 28.
+174 of 201 steps (87%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00074.fasta, output2/sample00074.fasta
+    output: final_output/sample00074_joined.fasta
+    jobid: 70
+    reason: Missing output files: final_output/sample00074_joined.fasta
+    wildcards: sample=sample00074
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00165.fasta, output2/sample00165.fasta
+    output: final_output/sample00165_joined.fasta
+    jobid: 14
+    reason: Missing output files: final_output/sample00165_joined.fasta
+    wildcards: sample=sample00165
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 4.
+175 of 201 steps (87%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 118.
+176 of 201 steps (88%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00049.fasta, output2/sample00049.fasta
+    output: final_output/sample00049_joined.fasta
+    jobid: 20
+    reason: Missing output files: final_output/sample00049_joined.fasta
+    wildcards: sample=sample00049
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00159.fasta, output2/sample00159.fasta
+    output: final_output/sample00159_joined.fasta
+    jobid: 104
+    reason: Missing output files: final_output/sample00159_joined.fasta
+    wildcards: sample=sample00159
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 70.
+177 of 201 steps (88%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 14.
+178 of 201 steps (89%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00024.fasta, output2/sample00024.fasta
+    output: final_output/sample00024_joined.fasta
+    jobid: 84
+    reason: Missing output files: final_output/sample00024_joined.fasta
+    wildcards: sample=sample00024
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00141.fasta, output2/sample00141.fasta
+    output: final_output/sample00141_joined.fasta
+    jobid: 119
+    reason: Missing output files: final_output/sample00141_joined.fasta
+    wildcards: sample=sample00141
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 20.
+179 of 201 steps (89%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 104.
+180 of 201 steps (90%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00081.fasta, output2/sample00081.fasta
+    output: final_output/sample00081_joined.fasta
+    jobid: 99
+    reason: Missing output files: final_output/sample00081_joined.fasta
+    wildcards: sample=sample00081
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00038.fasta, output2/sample00038.fasta
+    output: final_output/sample00038_joined.fasta
+    jobid: 34
+    reason: Missing output files: final_output/sample00038_joined.fasta
+    wildcards: sample=sample00038
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 84.
+181 of 201 steps (90%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 119.
+182 of 201 steps (91%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00149.fasta, output2/sample00149.fasta
+    output: final_output/sample00149_joined.fasta
+    jobid: 145
+    reason: Missing output files: final_output/sample00149_joined.fasta
+    wildcards: sample=sample00149
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00050.fasta, output2/sample00050.fasta
+    output: final_output/sample00050_joined.fasta
+    jobid: 25
+    reason: Missing output files: final_output/sample00050_joined.fasta
+    wildcards: sample=sample00050
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 99.
+183 of 201 steps (91%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 34.
+184 of 201 steps (92%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00182.fasta, output2/sample00182.fasta
+    output: final_output/sample00182_joined.fasta
+    jobid: 190
+    reason: Missing output files: final_output/sample00182_joined.fasta
+    wildcards: sample=sample00182
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00023.fasta, output2/sample00023.fasta
+    output: final_output/sample00023_joined.fasta
+    jobid: 185
+    reason: Missing output files: final_output/sample00023_joined.fasta
+    wildcards: sample=sample00023
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 145.
+185 of 201 steps (92%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 25.
+186 of 201 steps (93%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00091.fasta, output2/sample00091.fasta
+    output: final_output/sample00091_joined.fasta
+    jobid: 120
+    reason: Missing output files: final_output/sample00091_joined.fasta
+    wildcards: sample=sample00091
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00193.fasta, output2/sample00193.fasta
+    output: final_output/sample00193_joined.fasta
+    jobid: 59
+    reason: Missing output files: final_output/sample00193_joined.fasta
+    wildcards: sample=sample00193
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 190.
+187 of 201 steps (93%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 185.
+188 of 201 steps (94%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00054.fasta, output2/sample00054.fasta
+    output: final_output/sample00054_joined.fasta
+    jobid: 180
+    reason: Missing output files: final_output/sample00054_joined.fasta
+    wildcards: sample=sample00054
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00151.fasta, output2/sample00151.fasta
+    output: final_output/sample00151_joined.fasta
+    jobid: 105
+    reason: Missing output files: final_output/sample00151_joined.fasta
+    wildcards: sample=sample00151
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 120.
+189 of 201 steps (94%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 59.
+190 of 201 steps (95%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00021.fasta, output2/sample00021.fasta
+    output: final_output/sample00021_joined.fasta
+    jobid: 195
+    reason: Missing output files: final_output/sample00021_joined.fasta
+    wildcards: sample=sample00021
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00008.fasta, output2/sample00008.fasta
+    output: final_output/sample00008_joined.fasta
+    jobid: 177
+    reason: Missing output files: final_output/sample00008_joined.fasta
+    wildcards: sample=sample00008
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 180.
+191 of 201 steps (95%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 105.
+192 of 201 steps (96%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00020.fasta, output2/sample00020.fasta
+    output: final_output/sample00020_joined.fasta
+    jobid: 136
+    reason: Missing output files: final_output/sample00020_joined.fasta
+    wildcards: sample=sample00020
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00077.fasta, output2/sample00077.fasta
+    output: final_output/sample00077_joined.fasta
+    jobid: 12
+    reason: Missing output files: final_output/sample00077_joined.fasta
+    wildcards: sample=sample00077
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 195.
+193 of 201 steps (96%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 177.
+194 of 201 steps (97%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00001.fasta, output2/sample00001.fasta
+    output: final_output/sample00001_joined.fasta
+    jobid: 151
+    reason: Missing output files: final_output/sample00001_joined.fasta
+    wildcards: sample=sample00001
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00090.fasta, output2/sample00090.fasta
+    output: final_output/sample00090_joined.fasta
+    jobid: 27
+    reason: Missing output files: final_output/sample00090_joined.fasta
+    wildcards: sample=sample00090
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 136.
+195 of 201 steps (97%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 12.
+196 of 201 steps (98%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00167.fasta, output2/sample00167.fasta
+    output: final_output/sample00167_joined.fasta
+    jobid: 132
+    reason: Missing output files: final_output/sample00167_joined.fasta
+    wildcards: sample=sample00167
+    resources: tmpdir=/tmp
+
+
+[Fri Jun 28 13:45:26 2024]
+rule concatenate_files:
+    input: output1/sample00120.fasta, output2/sample00120.fasta
+    output: final_output/sample00120_joined.fasta
+    jobid: 147
+    reason: Missing output files: final_output/sample00120_joined.fasta
+    wildcards: sample=sample00120
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 151.
+197 of 201 steps (98%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 27.
+198 of 201 steps (99%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 132.
+199 of 201 steps (99%) done
+[Fri Jun 28 13:45:26 2024]
+Finished job 147.
+200 of 201 steps (99.5%) done
+Select jobs to execute...
+
+[Fri Jun 28 13:45:26 2024]
+localrule all:
+    input: final_output/sample00137_joined.fasta, final_output/sample00194_joined.fasta, final_output/sample00065_joined.fasta, final_output/sample00068_joined.fasta, final_output/sample00041_joined.fasta, final_output/sample00056_joined.fasta, final_output/sample00042_joined.fasta, final_output/sample00009_joined.fasta, final_output/sample00142_joined.fasta, final_output/sample00014_joined.fasta, final_output/sample00035_joined.fasta, final_output/sample00077_joined.fasta, final_output/sample00117_joined.fasta, final_output/sample00165_joined.fasta, final_output/sample00026_joined.fasta, final_output/sample00067_joined.fasta, final_output/sample00032_joined.fasta, final_output/sample00189_joined.fasta, final_output/sample00107_joined.fasta, final_output/sample00049_joined.fasta, final_output/sample00062_joined.fasta, final_output/sample00082_joined.fasta, final_output/sample00064_joined.fasta, final_output/sample00139_joined.fasta, final_output/sample00050_joined.fasta, final_output/sample00047_joined.fasta, final_output/sample00090_joined.fasta, final_output/sample00147_joined.fasta, final_output/sample00105_joined.fasta, final_output/sample00058_joined.fasta, final_output/sample00171_joined.fasta, final_output/sample00095_joined.fasta, final_output/sample00129_joined.fasta, final_output/sample00038_joined.fasta, final_output/sample00078_joined.fasta, final_output/sample00161_joined.fasta, final_output/sample00085_joined.fasta, final_output/sample00168_joined.fasta, final_output/sample00106_joined.fasta, final_output/sample00184_joined.fasta, final_output/sample00166_joined.fasta, final_output/sample00111_joined.fasta, final_output/sample00102_joined.fasta, final_output/sample00059_joined.fasta, final_output/sample00158_joined.fasta, final_output/sample00093_joined.fasta, final_output/sample00022_joined.fasta, final_output/sample00179_joined.fasta, final_output/sample00143_joined.fasta, final_output/sample00018_joined.fasta, final_output/sample00017_joined.fasta, final_output/sample00140_joined.fasta, final_output/sample00048_joined.fasta, final_output/sample00119_joined.fasta, final_output/sample00109_joined.fasta, final_output/sample00005_joined.fasta, final_output/sample00083_joined.fasta, final_output/sample00103_joined.fasta, final_output/sample00193_joined.fasta, final_output/sample00071_joined.fasta, final_output/sample00072_joined.fasta, final_output/sample00153_joined.fasta, final_output/sample00075_joined.fasta, final_output/sample00006_joined.fasta, final_output/sample00101_joined.fasta, final_output/sample00076_joined.fasta, final_output/sample00130_joined.fasta, final_output/sample00122_joined.fasta, final_output/sample00033_joined.fasta, final_output/sample00074_joined.fasta, final_output/sample00146_joined.fasta, final_output/sample00124_joined.fasta, final_output/sample00066_joined.fasta, final_output/sample00125_joined.fasta, final_output/sample00197_joined.fasta, final_output/sample00198_joined.fasta, final_output/sample00176_joined.fasta, final_output/sample00052_joined.fasta, final_output/sample00163_joined.fasta, final_output/sample00162_joined.fasta, final_output/sample00185_joined.fasta, final_output/sample00195_joined.fasta, final_output/sample00063_joined.fasta, final_output/sample00024_joined.fasta, final_output/sample00177_joined.fasta, final_output/sample00156_joined.fasta, final_output/sample00115_joined.fasta, final_output/sample00123_joined.fasta, final_output/sample00174_joined.fasta, final_output/sample00160_joined.fasta, final_output/sample00188_joined.fasta, final_output/sample00118_joined.fasta, final_output/sample00157_joined.fasta, final_output/sample00004_joined.fasta, final_output/sample00181_joined.fasta, final_output/sample00191_joined.fasta, final_output/sample00136_joined.fasta, final_output/sample00138_joined.fasta, final_output/sample00081_joined.fasta, final_output/sample00096_joined.fasta, final_output/sample00087_joined.fasta, final_output/sample00028_joined.fasta, final_output/sample00135_joined.fasta, final_output/sample00159_joined.fasta, final_output/sample00151_joined.fasta, final_output/sample00098_joined.fasta, final_output/sample00088_joined.fasta, final_output/sample00172_joined.fasta, final_output/sample00186_joined.fasta, final_output/sample00113_joined.fasta, final_output/sample00114_joined.fasta, final_output/sample00132_joined.fasta, final_output/sample00155_joined.fasta, final_output/sample00086_joined.fasta, final_output/sample00145_joined.fasta, final_output/sample00051_joined.fasta, final_output/sample00025_joined.fasta, final_output/sample00110_joined.fasta, final_output/sample00141_joined.fasta, final_output/sample00091_joined.fasta, final_output/sample00053_joined.fasta, final_output/sample00019_joined.fasta, final_output/sample00099_joined.fasta, final_output/sample00030_joined.fasta, final_output/sample00092_joined.fasta, final_output/sample00003_joined.fasta, final_output/sample00196_joined.fasta, final_output/sample00175_joined.fasta, final_output/sample00131_joined.fasta, final_output/sample00148_joined.fasta, final_output/sample00027_joined.fasta, final_output/sample00167_joined.fasta, final_output/sample00055_joined.fasta, final_output/sample00094_joined.fasta, final_output/sample00150_joined.fasta, final_output/sample00020_joined.fasta, final_output/sample00029_joined.fasta, final_output/sample00015_joined.fasta, final_output/sample00039_joined.fasta, final_output/sample00134_joined.fasta, final_output/sample00128_joined.fasta, final_output/sample00011_joined.fasta, final_output/sample00089_joined.fasta, final_output/sample00144_joined.fasta, final_output/sample00149_joined.fasta, final_output/sample00127_joined.fasta, final_output/sample00120_joined.fasta, final_output/sample00031_joined.fasta, final_output/sample00070_joined.fasta, final_output/sample00010_joined.fasta, final_output/sample00001_joined.fasta, final_output/sample00104_joined.fasta, final_output/sample00170_joined.fasta, final_output/sample00007_joined.fasta, final_output/sample00183_joined.fasta, final_output/sample00100_joined.fasta, final_output/sample00079_joined.fasta, final_output/sample00061_joined.fasta, final_output/sample00200_joined.fasta, final_output/sample00013_joined.fasta, final_output/sample00108_joined.fasta, final_output/sample00180_joined.fasta, final_output/sample00034_joined.fasta, final_output/sample00190_joined.fasta, final_output/sample00044_joined.fasta, final_output/sample00121_joined.fasta, final_output/sample00178_joined.fasta, final_output/sample00133_joined.fasta, final_output/sample00060_joined.fasta, final_output/sample00154_joined.fasta, final_output/sample00084_joined.fasta, final_output/sample00169_joined.fasta, final_output/sample00057_joined.fasta, final_output/sample00152_joined.fasta, final_output/sample00012_joined.fasta, final_output/sample00002_joined.fasta, final_output/sample00008_joined.fasta, final_output/sample00112_joined.fasta, final_output/sample00164_joined.fasta, final_output/sample00054_joined.fasta, final_output/sample00045_joined.fasta, final_output/sample00126_joined.fasta, final_output/sample00040_joined.fasta, final_output/sample00116_joined.fasta, final_output/sample00023_joined.fasta, final_output/sample00199_joined.fasta, final_output/sample00173_joined.fasta, final_output/sample00036_joined.fasta, final_output/sample00016_joined.fasta, final_output/sample00182_joined.fasta, final_output/sample00187_joined.fasta, final_output/sample00069_joined.fasta, final_output/sample00192_joined.fasta, final_output/sample00043_joined.fasta, final_output/sample00021_joined.fasta, final_output/sample00046_joined.fasta, final_output/sample00037_joined.fasta, final_output/sample00073_joined.fasta, final_output/sample00097_joined.fasta, final_output/sample00080_joined.fasta
+    jobid: 0
+    reason: Input files updated by another job: final_output/sample00172_joined.fasta, final_output/sample00103_joined.fasta, final_output/sample00102_joined.fasta, final_output/sample00006_joined.fasta, final_output/sample00095_joined.fasta, final_output/sample00186_joined.fasta, final_output/sample00033_joined.fasta, final_output/sample00153_joined.fasta, final_output/sample00112_joined.fasta, final_output/sample00014_joined.fasta, final_output/sample00003_joined.fasta, final_output/sample00025_joined.fasta, final_output/sample00127_joined.fasta, final_output/sample00193_joined.fasta, final_output/sample00118_joined.fasta, final_output/sample00170_joined.fasta, final_output/sample00093_joined.fasta, final_output/sample00148_joined.fasta, final_output/sample00070_joined.fasta, final_output/sample00071_joined.fasta, final_output/sample00145_joined.fasta, final_output/sample00027_joined.fasta, final_output/sample00191_joined.fasta, final_output/sample00185_joined.fasta, final_output/sample00114_joined.fasta, final_output/sample00023_joined.fasta, final_output/sample00126_joined.fasta, final_output/sample00011_joined.fasta, final_output/sample00141_joined.fasta, final_output/sample00067_joined.fasta, final_output/sample00094_joined.fasta, final_output/sample00088_joined.fasta, final_output/sample00150_joined.fasta, final_output/sample00140_joined.fasta, final_output/sample00032_joined.fasta, final_output/sample00147_joined.fasta, final_output/sample00120_joined.fasta, final_output/sample00164_joined.fasta, final_output/sample00038_joined.fasta, final_output/sample00091_joined.fasta, final_output/sample00051_joined.fasta, final_output/sample00124_joined.fasta, final_output/sample00004_joined.fasta, final_output/sample00047_joined.fasta, final_output/sample00169_joined.fasta, final_output/sample00017_joined.fasta, final_output/sample00107_joined.fasta, final_output/sample00179_joined.fasta, final_output/sample00156_joined.fasta, final_output/sample00066_joined.fasta, final_output/sample00061_joined.fasta, final_output/sample00089_joined.fasta, final_output/sample00166_joined.fasta, final_output/sample00005_joined.fasta, final_output/sample00056_joined.fasta, final_output/sample00137_joined.fasta, final_output/sample00068_joined.fasta, final_output/sample00035_joined.fasta, final_output/sample00060_joined.fasta, final_output/sample00165_joined.fasta, final_output/sample00026_joined.fasta, final_output/sample00082_joined.fasta, final_output/sample00123_joined.fasta, final_output/sample00075_joined.fasta, final_output/sample00054_joined.fasta, final_output/sample00052_joined.fasta, final_output/sample00200_joined.fasta, final_output/sample00104_joined.fasta, final_output/sample00086_joined.fasta, final_output/sample00178_joined.fasta, final_output/sample00115_joined.fasta, final_output/sample00136_joined.fasta, final_output/sample00085_joined.fasta, final_output/sample00022_joined.fasta, final_output/sample00194_joined.fasta, final_output/sample00111_joined.fasta, final_output/sample00157_joined.fasta, final_output/sample00138_joined.fasta, final_output/sample00013_joined.fasta, final_output/sample00100_joined.fasta, final_output/sample00132_joined.fasta, final_output/sample00158_joined.fasta, final_output/sample00055_joined.fasta, final_output/sample00135_joined.fasta, final_output/sample00097_joined.fasta, final_output/sample00121_joined.fasta, final_output/sample00029_joined.fasta, final_output/sample00101_joined.fasta, final_output/sample00053_joined.fasta, final_output/sample00189_joined.fasta, final_output/sample00083_joined.fasta, final_output/sample00049_joined.fasta, final_output/sample00092_joined.fasta, final_output/sample00076_joined.fasta, final_output/sample00198_joined.fasta, final_output/sample00109_joined.fasta, final_output/sample00190_joined.fasta, final_output/sample00116_joined.fasta, final_output/sample00152_joined.fasta, final_output/sample00042_joined.fasta, final_output/sample00062_joined.fasta, final_output/sample00105_joined.fasta, final_output/sample00180_joined.fasta, final_output/sample00039_joined.fasta, final_output/sample00016_joined.fasta, final_output/sample00122_joined.fasta, final_output/sample00098_joined.fasta, final_output/sample00078_joined.fasta, final_output/sample00008_joined.fasta, final_output/sample00099_joined.fasta, final_output/sample00020_joined.fasta, final_output/sample00007_joined.fasta, final_output/sample00125_joined.fasta, final_output/sample00108_joined.fasta, final_output/sample00131_joined.fasta, final_output/sample00128_joined.fasta, final_output/sample00046_joined.fasta, final_output/sample00110_joined.fasta, final_output/sample00050_joined.fasta, final_output/sample00129_joined.fasta, final_output/sample00012_joined.fasta, final_output/sample00151_joined.fasta, final_output/sample00048_joined.fasta, final_output/sample00037_joined.fasta, final_output/sample00181_joined.fasta, final_output/sample00113_joined.fasta, final_output/sample00065_joined.fasta, final_output/sample00176_joined.fasta, final_output/sample00044_joined.fasta, final_output/sample00182_joined.fasta, final_output/sample00069_joined.fasta, final_output/sample00058_joined.fasta, final_output/sample00072_joined.fasta, final_output/sample00117_joined.fasta, final_output/sample00155_joined.fasta, final_output/sample00154_joined.fasta, final_output/sample00163_joined.fasta, final_output/sample00036_joined.fasta, final_output/sample00168_joined.fasta, final_output/sample00001_joined.fasta, final_output/sample00009_joined.fasta, final_output/sample00064_joined.fasta, final_output/sample00159_joined.fasta, final_output/sample00192_joined.fasta, final_output/sample00057_joined.fasta, final_output/sample00139_joined.fasta, final_output/sample00096_joined.fasta, final_output/sample00119_joined.fasta, final_output/sample00146_joined.fasta, final_output/sample00030_joined.fasta, final_output/sample00162_joined.fasta, final_output/sample00177_joined.fasta, final_output/sample00142_joined.fasta, final_output/sample00063_joined.fasta, final_output/sample00130_joined.fasta, final_output/sample00183_joined.fasta, final_output/sample00161_joined.fasta, final_output/sample00018_joined.fasta, final_output/sample00010_joined.fasta, final_output/sample00149_joined.fasta, final_output/sample00077_joined.fasta, final_output/sample00087_joined.fasta, final_output/sample00040_joined.fasta, final_output/sample00133_joined.fasta, final_output/sample00195_joined.fasta, final_output/sample00144_joined.fasta, final_output/sample00034_joined.fasta, final_output/sample00175_joined.fasta, final_output/sample00021_joined.fasta, final_output/sample00090_joined.fasta, final_output/sample00084_joined.fasta, final_output/sample00043_joined.fasta, final_output/sample00015_joined.fasta, final_output/sample00167_joined.fasta, final_output/sample00187_joined.fasta, final_output/sample00080_joined.fasta, final_output/sample00188_joined.fasta, final_output/sample00041_joined.fasta, final_output/sample00031_joined.fasta, final_output/sample00059_joined.fasta, final_output/sample00106_joined.fasta, final_output/sample00074_joined.fasta, final_output/sample00134_joined.fasta, final_output/sample00081_joined.fasta, final_output/sample00002_joined.fasta, final_output/sample00184_joined.fasta, final_output/sample00173_joined.fasta, final_output/sample00199_joined.fasta, final_output/sample00024_joined.fasta, final_output/sample00197_joined.fasta, final_output/sample00073_joined.fasta, final_output/sample00196_joined.fasta, final_output/sample00045_joined.fasta, final_output/sample00174_joined.fasta, final_output/sample00143_joined.fasta, final_output/sample00160_joined.fasta, final_output/sample00079_joined.fasta, final_output/sample00019_joined.fasta, final_output/sample00028_joined.fasta, final_output/sample00171_joined.fasta
+    resources: tmpdir=/tmp
+
+[Fri Jun 28 13:45:26 2024]
+Finished job 0.
+201 of 201 steps (100%) done
+Complete log: .snakemake/log/2024-06-28T134520.693295.snakemake.log

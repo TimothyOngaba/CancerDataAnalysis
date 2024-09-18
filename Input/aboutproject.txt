@@ -1,0 +1,12 @@
+Table S8. Raw counts of 4,550 TCGA WGS samples classified at the genus level against
+ Microbial2023 database, for samples used in both this study and in the Poore et al. study.
+ This dataset contains counts for all 3,561 genera that had non-zero counts in either study.
+Task
+- Read data, tell what format is like etc
+
+- Calculate the sum of reads for each genus across all samples and give m
+ a nice ranked list of the top genera
+ 
+ TabS8Metadata is what it say it is mate
+
+ 

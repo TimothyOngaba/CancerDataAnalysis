@@ -1,0 +1,161 @@
+Building DAG of jobs...
+Using shell: /usr/bin/bash
+Provided cores: 4
+Rules claiming more threads will be scaled down.
+Job stats:
+job       count
+------  -------
+all           1
+rotate       10
+total        11
+
+Select jobs to execute...
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_5.png
+    output: output_pictures/picture_5.png
+    jobid: 5
+    reason: Missing output files: output_pictures/picture_5.png
+    wildcards: sample=picture_5
+    resources: tmpdir=/tmp
+
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_7.png
+    output: output_pictures/picture_7.png
+    jobid: 7
+    reason: Missing output files: output_pictures/picture_7.png
+    wildcards: sample=picture_7
+    resources: tmpdir=/tmp
+
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_9.png
+    output: output_pictures/picture_9.png
+    jobid: 9
+    reason: Missing output files: output_pictures/picture_9.png
+    wildcards: sample=picture_9
+    resources: tmpdir=/tmp
+
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_1.png
+    output: output_pictures/picture_1.png
+    jobid: 1
+    reason: Missing output files: output_pictures/picture_1.png
+    wildcards: sample=picture_1
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:39 2024]
+Finished job 7.
+1 of 11 steps (9%) done
+Select jobs to execute...
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_6.png
+    output: output_pictures/picture_6.png
+    jobid: 6
+    reason: Missing output files: output_pictures/picture_6.png
+    wildcards: sample=picture_6
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:39 2024]
+Finished job 6.
+2 of 11 steps (18%) done
+Select jobs to execute...
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_10.png
+    output: output_pictures/picture_10.png
+    jobid: 10
+    reason: Missing output files: output_pictures/picture_10.png
+    wildcards: sample=picture_10
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:39 2024]
+Finished job 5.
+3 of 11 steps (27%) done
+Select jobs to execute...
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_3.png
+    output: output_pictures/picture_3.png
+    jobid: 3
+    reason: Missing output files: output_pictures/picture_3.png
+    wildcards: sample=picture_3
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:39 2024]
+Finished job 1.
+4 of 11 steps (36%) done
+Select jobs to execute...
+
+[Sat Jun 29 23:07:39 2024]
+rule rotate:
+    input: input_pictures/picture_8.png
+    output: output_pictures/picture_8.png
+    jobid: 8
+    reason: Missing output files: output_pictures/picture_8.png
+    wildcards: sample=picture_8
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:40 2024]
+Finished job 3.
+5 of 11 steps (45%) done
+Select jobs to execute...
+
+[Sat Jun 29 23:07:40 2024]
+rule rotate:
+    input: input_pictures/picture_4.png
+    output: output_pictures/picture_4.png
+    jobid: 4
+    reason: Missing output files: output_pictures/picture_4.png
+    wildcards: sample=picture_4
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:40 2024]
+Finished job 4.
+6 of 11 steps (55%) done
+Select jobs to execute...
+
+[Sat Jun 29 23:07:40 2024]
+rule rotate:
+    input: input_pictures/picture_2.png
+    output: output_pictures/picture_2.png
+    jobid: 2
+    reason: Missing output files: output_pictures/picture_2.png
+    wildcards: sample=picture_2
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:41 2024]
+Finished job 2.
+7 of 11 steps (64%) done
+[Sat Jun 29 23:07:41 2024]
+Finished job 8.
+8 of 11 steps (73%) done
+[Sat Jun 29 23:07:41 2024]
+Finished job 10.
+9 of 11 steps (82%) done
+[Sat Jun 29 23:07:41 2024]
+Finished job 9.
+10 of 11 steps (91%) done
+Select jobs to execute...
+
+[Sat Jun 29 23:07:41 2024]
+localrule all:
+    input: output_pictures/picture_1.png, output_pictures/picture_2.png, output_pictures/picture_3.png, output_pictures/picture_4.png, output_pictures/picture_5.png, output_pictures/picture_6.png, output_pictures/picture_7.png, output_pictures/picture_8.png, output_pictures/picture_9.png, output_pictures/picture_10.png
+    jobid: 0
+    reason: Input files updated by another job: output_pictures/picture_6.png, output_pictures/picture_7.png, output_pictures/picture_3.png, output_pictures/picture_4.png, output_pictures/picture_8.png, output_pictures/picture_9.png, output_pictures/picture_1.png, output_pictures/picture_2.png, output_pictures/picture_10.png, output_pictures/picture_5.png
+    resources: tmpdir=/tmp
+
+[Sat Jun 29 23:07:41 2024]
+Finished job 0.
+11 of 11 steps (100%) done
+Complete log: .snakemake/log/2024-06-29T230737.558140.snakemake.log
